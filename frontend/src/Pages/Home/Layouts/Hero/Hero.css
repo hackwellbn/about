@@ -1,0 +1,62 @@
+.hero {
+  background: var(--burgundy);
+  color: var(--text-color);
+  padding: 60px 20px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-content {
+  max-width: 700px;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.fade-in {
+  opacity: 1;
+}
+
+.fade-out {
+  opacity: 0;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.three_circles_iterations {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+
+.circles {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.circle {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.circle.active {
+  background-color: var(--highlight-color);
+}

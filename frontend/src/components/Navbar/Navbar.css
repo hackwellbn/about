@@ -1,0 +1,159 @@
+header {
+    background: var(--burgundy);
+    position: sticky;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    position: relative;
+}
+
+.logo {
+    height: 50px;
+    width: 50px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: lighten;
+    object-fit: cover;
+}
+
+.navLinks .links {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    color: white;
+}
+
+.navLinks .links li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+.navLinks .links li a:hover {
+    color: var(--accent-color);
+}
+
+.auth {
+    display: flex;
+    gap: 10px;
+}
+
+.loginBtn,
+.signupBtn {
+    padding: 8px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.loginBtn {
+    background: transparent;
+    color: white;
+}
+
+.loginBtn:hover {
+    background: white;
+    color: var(--burgundy);
+}
+
+.signupBtn {
+    background: var(--accent-color);
+    color: var(--deep-charcoal);
+}
+
+.signupBtn:hover {
+    background: var(--highlight-color);
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background: white;
+    margin: 4px 0;
+    transition: all 0.3s ease;
+    border-radius: 3px;
+}
+
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(8px, 8px);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(8px, -8px);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .navLinks {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 70%;
+        height: 100vh;
+        background: var(--burgundy);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: right 0.4s ease;
+        z-index: 1000;
+    }
+
+    .navLinks.active {
+        left: 0;
+    }
+
+    .navLinks .links {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .navLinks .links li a {
+        font-size: 1.5rem;
+    }
+
+    .auth {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .navLinks {
+        width: 80%;
+    }
+
+    .logo {
+        height: 40px;
+        width: 40px;
+    }
+}

@@ -1,0 +1,30 @@
+:root {
+    --privacy-text: #fff;
+    --privacy-heading: #fff;
+    --privacy-accent: #4a90e2;
+    --privacy-border: #ddd;
+}
+:root {
+    --primary-background-color: #0e1420;
+    --secondary-background-color: #1E1E1E;
+    --text-color: #FFFFFF;
+    --accent-color: #FFEB3B;
+    --highlight-color: #FFC107;
+    --link-color: #BB86FC;
+    --border-color: #333333;
+    --deep-charcoal: #0d0c1d;
+    --muted-indigo: #1b1a2f;
+    --dark-purple: #2a0a29;
+    --burgundy: #3b0d1d;
+    --primary-bg: radial-gradient(circle at 18% 20%, var(--dark-purple), transparent 42%), radial-gradient(circle at 82% 78%, var(--burgundy), transparent 42%), linear-gradient(135deg, var(--deep-charcoal), var(--muted-indigo) 80%);
+    --secondary-bg: radial-gradient(circle at 18% 20%, var(--dark-purple), transparent 42%), radial-gradient(circle at 82% 78%, var(--burgundy), transparent 42%), linear-gradient(135deg, var(--muted-indigo), var(--deep-charcoal) 80%);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+}
