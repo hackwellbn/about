@@ -1,9 +1,9 @@
 import React from 'react'
 import Titles from '../../../../../components/Titles/Titles'
-
+import './Mission.css'
 const Mission = () => {
   return (
-    <div>
+    <div className='mission'>
         <h1>
             <Titles title="Our Mission" />
         </h1>
