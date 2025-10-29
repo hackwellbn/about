@@ -1,0 +1,9 @@
+.titles-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+    color: var(--deep-charcoal);
+}

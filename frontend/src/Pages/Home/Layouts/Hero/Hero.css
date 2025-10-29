@@ -16,7 +16,14 @@
   max-width: 700px;
   transition: opacity 0.5s ease-in-out;
 }
+@media (min-width: 768px) {
+  .hero-content {
+  max-width: 800px;
+  margin: 0 70px;
+  transition: opacity 0.5s ease-in-out;
+}
 
+}
 .fade-in {
   opacity: 1;
 }
