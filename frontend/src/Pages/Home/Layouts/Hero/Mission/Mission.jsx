@@ -1,6 +1,7 @@
 import React from 'react'
 import Titles from '../../../../../components/Titles/Titles'
 import './Mission.css'
+
 const Mission = () => {
   return (
     <div className='mission'>

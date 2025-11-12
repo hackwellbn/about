@@ -26,11 +26,24 @@ const Navbar = () => {
                         <li className="link">
                             <Link onClick={closeMenu}>About</Link>
                         </li>
+
+                    <li className="link">
+                        <Link to={'https://netoracloud.com'}>NetoraCloud</Link>
+                    </li>
                         <li className="link">
                             <Link onClick={closeMenu}>Services</Link>
-                        </li>
+                        </li>  
                         <li className="link">
                             <Link onClick={closeMenu}>Support</Link>
+                        </li>
+                        <li className="link">
+                            <Link onClick={closeMenu}>Leadership</Link>
+                        </li>
+                                                <li className="link">
+                            <Link to='https://photontool.softnetkenya.com'>Photon Tools</Link>
+                        </li>
+                        <li className="link">
+                            <Link to='/impact'>Impacts</Link>
                         </li>
                     </ul>
                 </div>

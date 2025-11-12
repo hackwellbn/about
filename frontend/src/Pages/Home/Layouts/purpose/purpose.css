@@ -1,0 +1,68 @@
+.purpose {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  color: #fff;
+  text-align: center;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+/* Video background styling */
+.video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  filter: brightness(0.6); /* Darkens video slightly for contrast */
+}
+
+/* Content overlay */
+.purpose-content {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+}
+
+.purpose-content h1 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin-bottom: 1rem;
+}
+
+.purpose-content p {
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  line-height: 1.6;
+  color: #f0f0f0;
+}
+.three_btns{
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 40px;
+    transform:translateY(200%);
+    display: inline-flex;
+    gap: 20px;
+    padding: 10px;
+    margin-bottom: 2px;
+}
+.three_btns .purposes{
+    border-radius: 10px;
+    border: none;
+    padding: 7px;
+
+}
+
+.purposes.active {
+  background-color: white;
+  color: black;
+  transition: 0.3s ease;
+}
