@@ -3,7 +3,7 @@ import './purpose.css';
 import { Link } from 'react-router-dom';
 
 // Import multiple videos
-import video1 from '../../../../assets/grok-video-a7dfbecb-832c-4973-9260-e4a0a6e4c814.mp4';
+import video1 from '../../../../assets/main.mp4';
 import video2 from '../../../../assets/community-video.mp4';
 import video3 from '../../../../assets/community-video.mp4';
 
